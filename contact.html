@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <link rel="stylesheet" type"text/css" href="reset.css">
+        <link rel="stylesheet" type"text/css" href="styles.css">
+        
+    </head>
+    
+    <body>
+        
+        <section class="wrapper">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" /></a>
+                    
+                </div>
+                <nav>
+                    <ul>
+                    
+                        <li>
+                        
+                        <a href="about.html">About me</a>
+                        
+                        </li>
+                        
+                        <li>
+                         
+                        <a href="contact.html" class="selected">Contact</a>
+                            
+                        </li>
+                    
+                    
+                    </ul>
+
+                </nav>
+            
+            
+            </header>
+        
+        
+            <section class="contact-content">
+                <span class="error">You must fill up all fields</span>
+                <span class="success">Thanks for contacting me!</span>
+                
+               <form class="contactform" enctype="text/plain" method="get" action="">
+                    Name:<br /><br /> <input type="text" class="name" name="name" /><br /><br />
+                    Comments:<br /> <br /> <textarea rows="5" id="comments" cols="30" name="comments"></textarea>
+                   <br /><br />
+                    <input id="send" type="submit" />
+                
+                </form>
+                
+                <a  href="index.html">&lt; Back</a>
+               
+            </section>
+
+        
+            <footer>
+
+                <div class="social-media">
+                    <div class="insta">
+                        <a href="https://www.instagram.com/bertafndz/" target="_blank"><img src="images/insta.png" /></a> 
+                    </div>
+                    
+                    <div class="twitter">
+                        <a href="https://twitter.com/Bertafndz" target="_blank"><img src="images/twitter.png" /></a>
+                        
+                    </div>
+                    
+                    <div class="vimeo">
+                       <a href="https://vimeo.com/user34618416" target="_blank"><img src="images/vimeo.png" /></a>
+                        
+                    </div>
+                    
+                    <div class="youtube">
+                         <a href="https://www.youtube.com/channel/UCgDReW9Iebp66cuxuuCFSgw?view_as=subscriber" target="_blank"><img src="images/youtube.png" /></a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="copy">
+                    &copy; Berta Fernández
+
+                </div>
+
+            </footer>
+            
+        </section>
+        <script>
+            var send = document.querySelector('.contactform');
+            
+            var comments = document.querySelector('#comments');
+            var error = document.querySelector('.error');
+            var success = document.querySelector('.success');
+            send.addEventListener('submit', function (ev) {
+                ev.preventDefault();
+                var name = document.querySelector('.name');
+                
+                if(name.value === '' || comments.value === '') {
+                    error.style.display = 'block';
+                }
+                else {
+                    error.style.display = 'none';
+                    success.style.display = 'block';
+                    
+                    window.location.href = 'mailto:bertapiedad@gmail.com';
+                }
+            });
+        </script>
+    </body>
+</html>
