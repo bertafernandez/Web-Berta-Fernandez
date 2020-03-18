@@ -12,13 +12,15 @@
         
         <section class="wrapper">
             <header>
+                
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.png" /></a>
                     
                 </div>
                 <nav>
                     <ul>
-                         <li>
+                        
+                        <li>
                         
                             <a href="index.html">Art work</a>
                         
@@ -32,15 +34,17 @@
                     
                         <li>
                         
-                        <a href="about.html">About me</a>
+                            <a href="about.html">About me</a>
                         
                         </li>
                         
                         <li>
                          
-                        <a href="contact.html" class="selected">Contact</a>
+                            <a class="contact" href="contact.html">Contact</a>
                             
                         </li>
+                        
+                        
                     
                     
                     </ul>
@@ -50,21 +54,20 @@
             
             </header>
         
+            
         
-            <section class="contact-content">
-                <span class="error">You must fill up all fields</span>
-                <span class="success">Thanks for contacting me!</span>
+            <section class="home-content">
                 
-               <form class="contactform" enctype="text/plain" method="get" action="">
-                    Name:<br /><br /> <input type="text" class="name" name="name" /><br /><br />
-                    Comments:<br /> <br /> <textarea rows="5" id="comments" cols="30" name="comments"></textarea>
-                   <br /><br />
-                    <input id="send" type="submit" />
                 
-                </form>
                 
-                <a  href="index.html">&lt; Back</a>
-               
+                <iframe style="text-align: center; margin-left: auto; margin-right: auto" src="https://player.vimeo.com/video/369937968" width="900" height="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+            </section>
+            
+             <section class="home-content">
+                
+                <iframe style="text-align: center; margin-left: auto; margin-right: auto" src="https://player.vimeo.com/video/369937968" width="900" height="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
             </section>
 
         
@@ -76,7 +79,7 @@
                     </div>
                     
                     <div class="twitter">
-                        <a href="https://twitter.com/Bertafndz" target="_blank"><img src="images/twitter.png" /></a>
+                       <a href="https://twitter.com/Bertafndz" target="_blank"><img src="images/twitter.png" /></a>
                         
                     </div>
                     
@@ -85,40 +88,21 @@
                         
                     </div>
                     
-                    <div class="youtube">
-                         <a href="https://www.youtube.com/channel/UCgDReW9Iebp66cuxuuCFSgw?view_as=subscriber" target="_blank"><img src="images/youtube.png" /></a>
+                 <div class="youtube">
+                       <a href="https://www.youtube.com/channel/UCgDReW9Iebp66cuxuuCFSgw?view_as=subscriber" target="_blank"><img src="images/youtube.png" /></a>
                         
                     </div>
                     
                 </div>
                 <div class="copy">
                     &copy; Berta Fernández
-
                 </div>
 
             </footer>
             
         </section>
-        <script>
-            var send = document.querySelector('.contactform');
-            
-            var comments = document.querySelector('#comments');
-            var error = document.querySelector('.error');
-            var success = document.querySelector('.success');
-            send.addEventListener('submit', function (ev) {
-                ev.preventDefault();
-                var name = document.querySelector('.name');
-                
-                if(name.value === '' || comments.value === '') {
-                    error.style.display = 'block';
-                }
-                else {
-                    error.style.display = 'none';
-                    success.style.display = 'block';
-                    
-                    window.location.href = 'mailto:bertapiedad@gmail.com';
-                }
-            });
-        </script>
     </body>
+    <script>
+        
+    </script>
 </html>
